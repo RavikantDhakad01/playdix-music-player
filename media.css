@@ -81,7 +81,7 @@
   }
 }
 
-@media screen and (max-width: 475px) {
+@media screen and (max-width: 496px) {
   .container {
     margin-bottom: 50px;
   }
@@ -148,9 +148,9 @@
   }
   .playbar {
     position: absolute;
-    height: 85px;
+    height: 130px;
     gap: 22px;
-    width: 92%;
+    width: 84%;
     top: 100vw;
     display: none;
   }
@@ -160,7 +160,7 @@
   #close2 {
     display: block;
     position: absolute;
-    top: 10px;
+    top: 22px;
     right: 20px;
     width: 30px;
     cursor: pointer;
@@ -168,7 +168,7 @@
 
   .abovebar {
     flex-direction: column;
-    margin-top: -15px;
+    margin-top: 0px;
     gap: 8px;
   }
   .timing {

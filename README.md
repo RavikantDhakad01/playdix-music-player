@@ -27,25 +27,6 @@ It supports play/pause, next/previous switching, dynamic seekbar, responsive UI,
 
 ---
 
-## 📂 Project Structure
-
-MusicPlayer
-│── index.html
-│── style.css
-│── media.css
-│── utility.css
-│── script.js
-│── songs.json
-│
-├── Songs
-│   ├── song1.mp3
-│   ├── song2.mp3
-│   └── ...
-│
-└── icons
-    ├── logo.svg
-    └── ...
-
-
 ⭐ Support
+
 If you like this project, give it a star ⭐ on GitHub!

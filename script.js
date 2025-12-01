@@ -127,7 +127,7 @@ close2.addEventListener("click", () => {
 
 // Responsive fix
 window.addEventListener("resize", () => {
-  if (window.innerWidth > 475) playbar.style.display = "block";
+  if (window.innerWidth > 496) playbar.style.display = "block";
   else playbar.style.display = "none";
 });
 
@@ -137,3 +137,4 @@ line.addEventListener('click', (e) => {
   circle.style.left = percent + '%';
   currentsong.currentTime = (currentsong.duration * percent) / 100;
 });
+

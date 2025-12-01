@@ -107,10 +107,10 @@
   }
   .music-player {
     position: absolute;
-    top: 27px;
-    right: 10%;
+    top: 20px;
+    right: 5%;
     display: block;
-    width: 37px;
+    width: 35px;
     cursor: pointer;
     /* animation: roll 3s linear infinite; */
   }
@@ -194,3 +194,4 @@
     width: 92vw;
   }
 }
+

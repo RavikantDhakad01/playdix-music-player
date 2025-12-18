@@ -15,8 +15,6 @@ const close2 = document.querySelector("#close2");
 let Songs = [];
 
 const currentsong = new Audio();
-
-// ✔ Play music and auto-add .mp3
 function playmusic(track) {
   currentsong.src = "/Songs/" + track + ".mp3";
   currentsong.play();
@@ -33,13 +31,13 @@ function formatTime(seconds) {
   return `${minutes}:${remainingSeconds < 10 ? "0" : ""}${remainingSeconds}`;
 }
 
-// ====== Fetch songs from JSON ======
+
 fetch("/songs.json")
   .then(res => res.json())
   .then(data => {
-    Songs = data.map(song => song.replace(".mp3", "")); // ✔ remove .mp3
+    Songs = data.map(song => song.replace(".mp3", "")); 
 
-    // Add all songs in UI
+
     for (const song of Songs) {
       songul.innerHTML += `
         <li>
@@ -49,13 +47,13 @@ fetch("/songs.json")
         </li>`;
     }
 
-    // ✔ Set first song UI only (no play)
+    
     ssong.innerHTML = Songs[0];
     currentsong.src = "/Songs/" + Songs[0] + ".mp3";
   })
   .catch(err => console.log("Error loading songs:", err));
 
-// Play from library
+
 songul.addEventListener("click", (e) => {
   if (e.target.classList.contains("playy")) {
     let track = e.target.parentElement.querySelector(".song").innerHTML.trim();
@@ -63,10 +61,9 @@ songul.addEventListener("click", (e) => {
   }
 });
 
-// Playbar play button
 play2.addEventListener("click", () => {
 
-  // ✔ Start first song if nothing set
+
   if (!currentsong.src || ssong.innerHTML.trim() === "") {
     playmusic(Songs[0]);
     return;
@@ -83,13 +80,11 @@ play2.addEventListener("click", () => {
   }
 });
 
-// Time update
 currentsong.addEventListener("timeupdate", () => {
   timeInfo.innerHTML = `${formatTime(currentsong.currentTime)}/${formatTime(currentsong.duration)}`;
   circle.style.left = `${(currentsong.currentTime / currentsong.duration) * 100}%`;
 });
 
-// Previous button
 previous.addEventListener("click", () => {
   let currentName = ssong.innerHTML.trim();
   let index = Songs.indexOf(currentName);
@@ -97,7 +92,7 @@ previous.addEventListener("click", () => {
   if (index > 0) playmusic(Songs[index - 1]);
 });
 
-// Next button
+
 next.addEventListener("click", () => {
   let currentName = ssong.innerHTML.trim();
   let index = Songs.indexOf(currentName);
@@ -105,7 +100,7 @@ next.addEventListener("click", () => {
   if (index < Songs.length - 1) playmusic(Songs[index + 1]);
 });
 
-// Mobile menu
+
 hamburger.addEventListener("click", () => {
   left.style.left = "0%";
   left.style.backgroundColor = "black";
@@ -115,26 +110,25 @@ close.addEventListener("click", () => {
   left.style.left = "-110%";
 });
 
-// Open playbar
+
 player.addEventListener("click", () => {
   playbar.style.display = "block";
 });
 
-// Close playbar
 close2.addEventListener("click", () => {
   playbar.style.display = "none";
 });
 
-// Responsive fix
 window.addEventListener("resize", () => {
   if (window.innerWidth > 496) playbar.style.display = "block";
   else playbar.style.display = "none";
 });
 
-// Seekbar click
+
 line.addEventListener('click', (e) => {
   let percent = (e.offsetX / e.target.getBoundingClientRect().width) * 100;
   circle.style.left = percent + '%';
   currentsong.currentTime = (currentsong.duration * percent) / 100;
 });
+
 

@@ -1,15 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   font-family: "Roboto", serif;
 }
+
 :root {
   --a: 0;
 }
+
 body {
   background-color: black;
 }
+
 .container {
   background-color: black;
   color: white;
@@ -27,6 +31,7 @@ body {
   align-items: center;
   justify-content: center;
 }
+
 .main2 {
   margin: 12px;
   background-color: #1f1f1f;
@@ -38,13 +43,16 @@ body {
   width: 82%;
   position: relative;
 }
+
 .main2 > * {
   margin-top: 12px;
 }
+
 .logo {
   gap: 10px;
   height: 25px;
 }
+
 .home {
   margin-top: 17px;
   height: 22px;
@@ -52,6 +60,7 @@ body {
   gap: 10px;
   cursor: pointer;
 }
+
 .search {
   height: 22px;
   display: flex;
@@ -63,15 +72,18 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 60vh;
+ 
 }
+
 .lib2 {
+  position: relative;
   width: 290px;
   height: 70vh;
   background-color: #1f1f1f;
   border-radius: 7px;
   position: relative;
 }
+
 .library {
   width: 80%;
   height: 25px;
@@ -81,7 +93,7 @@ body {
 }
 
 .library-songs {
-  min-height: 55vh;
+  min-height: 51vh;
   margin-top: 0px;
   margin-left: 20px;
   height: 40vh;
@@ -89,6 +101,7 @@ body {
   margin-right: 20px;
   overflow: scroll;
 }
+
 .library-songs ul li {
   list-style-type: decimal;
   display: flex;
@@ -99,10 +112,12 @@ body {
   border-radius: 10px;
   margin-top: 4px;
 }
+
 .song {
   width: 152px;
   padding-left: 5px;
 }
+
 .playy {
   cursor: pointer;
 }
@@ -124,18 +139,21 @@ body {
   font-size: 20px;
   border-radius: 7px;
 }
+
 #leftArr {
   background: transparent;
   border: 0;
   outline: 0;
   cursor: pointer;
 }
+
 #RightArr {
   border: 0;
   outline: 0;
   background: transparent;
   cursor: pointer;
 }
+
 #sign-up {
   margin-right: 20px;
   background: transparent;
@@ -149,6 +167,7 @@ body {
 #sign-up:hover {
   font-size: 16px;
 }
+
 #login {
   padding: 8px 9px;
   border-radius: 18px;
@@ -157,9 +176,11 @@ body {
   font-weight: bold;
   cursor: pointer;
 }
+
 #login:hovar {
   font-size: 14px;
 }
+
 .cards-main {
   position: relative;
   background-color: #1f1f1f;
@@ -169,6 +190,7 @@ body {
   font-size: 16px;
   border-radius: 7px;
 }
+
 .cards {
   max-height: 45vh;
   display: flex;
@@ -187,10 +209,10 @@ body {
   flex-direction: column;
   align-items: center;
   border-radius: 8px;
-
   width: 210px;
   position: relative;
 }
+
 .card:hover {
   --a: 1;
 }
@@ -200,15 +222,18 @@ body {
   object-fit: cover;
   border-radius: 7px;
 }
+
 .images {
   display: flex;
   justify-content: center;
   position: relative;
 }
+
 .card h3 {
   margin-top: 5px;
   font-size: 19px;
 }
+
 .card p {
   text-align: center;
   font-size: 15px;
@@ -245,12 +270,14 @@ body {
   padding-bottom: 35px;
   gap: 25px;
 }
+
 .abovebar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
 }
+
 .ssong {
   color: black;
   padding: 0px 30px;
@@ -258,6 +285,7 @@ body {
   width: 190px;
   height: 20px;
 }
+
 .playbtns {
   display: flex;
   gap: 10px;
@@ -277,6 +305,7 @@ body {
   width: 27px;
   cursor: pointer;
 }
+
 .timing {
   color: black;
   padding-left: 40px;
@@ -285,6 +314,7 @@ body {
   width: 190px;
   height: 20px;
 }
+
 .seekbar {
   width: 40vw;
   height: 50px;
@@ -294,6 +324,7 @@ body {
   margin: auto;
   cursor: pointer;
 }
+
 #line {
   width: 100%;
   background-color: black;
@@ -301,6 +332,7 @@ body {
   cursor: pointer;
   border-radius: 3px;
 }
+
 #circle {
   width: 20px;
   height: 20px;
@@ -310,10 +342,12 @@ body {
   cursor: pointer;
   left: 0%;
 }
+
 .navleft {
   display: flex;
   gap: 33px;
 }
+
 .music-player {
   display: none;
   padding: 0px 0px;
@@ -328,15 +362,9 @@ body {
 }
 
 @keyframes pulse {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.10); /* little more zoom */
-  }
-  100% {
-    transform: scale(1);
-  }
+  0%   { transform: scale(1); }
+  50%  { transform: scale(1.10); }
+  100% { transform: scale(1); }
 }
 
 #hamburger {
@@ -344,6 +372,7 @@ body {
   display: none;
   cursor: pointer;
 }
+
 #close {
   width: 30px;
   position: absolute;
@@ -351,21 +380,18 @@ body {
   cursor: pointer;
   display: none;
 }
+
 #close2 {
   display: none;
 }
 footer{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: absolute;
+  bottom: 10px;
   font-size: 18px;
-  margin-top:7px;
   gap: 5px;
+  padding-left: 10px;
 }
 footer a{
 color: inherit;
 text-decoration: none;
 }
-
-
-

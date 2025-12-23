@@ -1,4 +1,4 @@
-# 🎵 Music Player – HTML | CSS | JavaScript
+## 🎵 Music Player – HTML | CSS | JavaScript
 
 A clean and responsive **Music Player Web App** built using pure **HTML, CSS, and JavaScript**.  
 It supports play/pause, next/previous switching, dynamic seekbar, responsive UI, and smooth animations.

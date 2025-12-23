@@ -5,6 +5,11 @@ It supports play/pause, next/previous switching, dynamic seekbar, responsive UI,
 
 ---
 
+## 🌐 Live Demo
+🔗 https://playdix.netlify.app/
+
+---
+
 ## 🚀 Features
 
 - 🎧 Play / Pause controls  

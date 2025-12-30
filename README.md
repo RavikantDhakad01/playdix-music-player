@@ -1,6 +1,6 @@
-# 🎵 Playdix – Web Music Player
+# 🎵 playdix – Web Music Player
 
-> 🎧 **Playdix** is a responsive, web-based music player inspired by modern streaming platforms.  
+> 🎧 **playdix** is a responsive, web-based music player inspired by modern streaming platforms.  
 > It offers a **clean, modern UI** and a **smooth playback experience**, built purely with  
 > **HTML, CSS, and Vanilla JavaScript**.
 

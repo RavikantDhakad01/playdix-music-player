@@ -1,7 +1,8 @@
 # 🎵 Playdix – Web Music Player
 
-Playdix is a responsive, web-based music player inspired by modern streaming platforms.  
-It delivers a clean UI and smooth playback experience using only **HTML, CSS, and Vanilla JavaScript**.
+> 🎧 **Playdix** is a responsive, web-based music player inspired by modern streaming platforms.  
+> It offers a **clean, modern UI** and a **smooth playback experience**, built purely with  
+> **HTML, CSS, and Vanilla JavaScript**.
 
 ---
 
@@ -28,8 +29,12 @@ It delivers a clean UI and smooth playback experience using only **HTML, CSS, an
 
 ---
 
-## 📂 Project Structure
-playdix/ ├── index.html ├── style.css ├── utility.css ├── media.css ├── script.js ├── icons/ │   └── favicon.ico ├── Songs/ │   └── .mp3 ├── songs.json
+## 🌐 Live Project
+
+🚀 **Live Demo:**  
+👉 https://playdix.netlify.app/
+
+> Open the project on desktop or mobile for the best experience.
 
 ---
 

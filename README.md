@@ -14,7 +14,7 @@
 - ⏱️ Live track duration & progress indicator
 - 🎚️ Click-to-seek progress bar
 - 📱 Fully responsive layout (mobile & desktop)
-- 🍔 Hamburger menu for small screens
+- 🍔 Hamburger menu for small screen
 - 🎧 Animated music player indicator
 - 🖤 Modern dark-themed UI
 
